@@ -1,0 +1,32 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+button{
+  background: url("../imagens/delete.png") 0 0 /25px 25px no-repeat;
+  height: 2.1rem;
+  width:1.5rem;
+  padding: 0.1rem;
+  border-radius: 0.3rem;
+  border: none;
+  cursor: crosshair;
+
+}
+footer {
+  /*text-align:center; - centralizar o texto
+  color - cor da fonte*/
+  color: white;
+  text-align: center;
+  font-style: italic;
+
+}
