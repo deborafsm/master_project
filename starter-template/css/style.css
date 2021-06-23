@@ -19,14 +19,18 @@ button{
   padding: 0.1rem;
   border-radius: 0.3rem;
   border: none;
-  cursor: crosshair;
+  cursor: hand;
 
 }
+
 footer {
   /*text-align:center; - centralizar o texto
   color - cor da fonte*/
   color: white;
   text-align: center;
   font-style: italic;
+  position:absolute;
+  bottom:0;
+  width:100%;
 
 }

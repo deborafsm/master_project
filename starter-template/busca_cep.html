@@ -3,13 +3,15 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/scriptcpf.js"></script>
   <title>Starter Template - Materialize</title>
     <link rel="stylesheet" href="style.css">
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/styleCep.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
@@ -34,12 +36,13 @@
 
     <section>
         <div id="dados">
-            <input type="text" id="nomeProduto"  size="10" placeholder="Nome Produto" > 
-            <input type="number" id="qntProduto" step="0.1" min="0" max="15.4" placeholder="Qnt Produto" >
-            <input type="number" id="precoProduto" step="0.1" min="0" max="15.4"placeholder="Preço Produto"  >
-            <a class="btn-floating btn-large waves-effect waves-light red" onclick='addItem()'><i class="material-icons">add</i></a>
-
-
+            <input type="text" id="numeroCep"  size="10" placeholder="CEP"> 
+            <button type="button" id="buttoncpf" onclick="consultaCep()">consultar</button>
+            <p id="cep"></p>
+            <p id="rua"></p>
+            <p id="bairro"></p>
+            <p id="us"></p>
+            
             <div id="cart">
             </div>
         
@@ -49,7 +52,7 @@
     <div id="res">
         
     </div>
-    <script src="js/script.js"></script>
+    
 
       </div>
 
@@ -61,30 +64,18 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="white-text">Jquery e Ajax</h5>
+          <p class="grey-text text-lighten-4">Baseado no curso rápido da plataforma Digital One Innovation  de JQuery e Ajax. 
+          </p>
+          <!--Pontos Importantes na aula JQuery e Ajax
+            0º Oque é AJAX
+            Resp:  Asynchronous JavaScript and XML,s
+            1ºAjax não é uma linguagem 
+            Resp: Ajax é um conjunto de técnicas que intera melhor o usuário
+        -->
 
 
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
+       
     </div>
     <div class="footer-copyright">
       <div class="container">
