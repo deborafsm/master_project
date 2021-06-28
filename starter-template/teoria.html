@@ -3,102 +3,69 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Teoria Musical 1º Modulo</title>
-    <link rel="stylesheet" href="style_math.css">
+  <title>Starter Template - Materialize</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-
 <body>
-    <!--NAVEGAÇÃO DO SITE-->
-  <nav class="purple lighten-1" role="navigation">
+  <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="material-icons">favorite</a>
-      
-      <!-- Essa ul é para colocar o menu hamburger-->
-        <ul class="right hide-on-med-and-down">
-        <li><a href="#"></a></li>
+      <ul class="right hide-on-med-and-down">
+        <img style="width: 80px;"src="imagens/nyah.png " alt="">
+        <!-- <li><a href="#">Navbar Link</a></li> -->
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#"></a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
-
   </nav>
-<!---->
-
   <div class="section no-pad-bot" id="index-banner">
-    
-  </div>
-  <div class="container">
+    <div class="container">
+      <br><br>
+      <h1 class="header center purple-text" style="font-family: monospace;"><img style="width: 80px;"src="imagens/note.png " alt=""> Teoria Musical</h1>
+     
+      <div class="row center">
+        <a href="modulo1.html" id="download-button" class="btn-large waves-effect waves-light pink">Módulo 1</a>
+        <a href="modulo2.html " id="download-button" class="btn-large waves-effect waves-light pink">Módulo 2</a>
+        <a href="modulo3.html" id="download-button" class="btn-large waves-effect waves-light pink">Módulo 3</a>
+        <a href="modulo4.html" id="download-button" class="btn-large waves-effect waves-light pink">Módulo 4</a><BR></BR>
+        <a href="modulo5.html" id="download-button" class="btn-large waves-effect waves-light pink">Módulo 5</a>
+      </div>
+      <br><br>
 
-        <div class="start_btn"><button>Vamos lá!!</button></div>
-    
-        <!-- Informações sobre as questões -->
-        <div class="info_box">
-            <div class="info-title"><span>Informações</span></div>
-            <div class="info-list">
-                <div class="info">1. Você tem apenas 15 segundos por questão.</div>
-                <div class="info">2. Não é possivel selecionar outra resposta depois de responder.</div>
-                <div class="info">3. Ao final receberá o score.</div>
-            </div>
-            <div class="buttons">
-                <button class="quit">Sair do Quiz</button>
-                <button class="restart">Continuar</button>
-            </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer light-blue-textx">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+          <h5 class="white-text"></h5>
+          <p class="grey-text text-lighten-4">Nasci para agradar a Deus e não ao homem porque o homem passa mas Deus não.</p>
         </div>
-    
-        <!-- Quiz Box -->
-        <div class="quiz_box">
-            <header>
-                <div class="title">Questões Sobre Principios Musicais</div>
-                <div class="timer">
-                    <div class="time_left_txt">Tempo</div>
-                    <div class="timer_sec">15</div>
-                </div>
-                <div class="time_line"></div>
-            </header>
-            <section>
-                <div class="que_text">
-                    <!-- Here I've inserted question from JavaScript -->
-                </div>
-                <div class="option_list">
-                    <!-- Here I've inserted options from JavaScript -->
-                </div>
-            </section>
-    
-            <!-- footer of Quiz Box -->
-            <footer>
-                <div class="total_que">
-                    <!-- Here I've inserted Question Count Number from JavaScript -->
-                </div>
-                <button class="next_btn">Next Que</button>
-            </footer>
-        </div>
-    
-        <!-- Result Box -->
-        <div class="result_box">
-            <div class="icon">
-                <i class="fas fa-crown"></i>
-            </div>
-            <div class="complete_text">You've completed the Quiz!</div>
-            <div class="score_text">
-                <!-- Here I've inserted Score Result from JavaScript -->
-            </div>
-            <div class="buttons">
-                <button class="restart">Replay Quiz</button>
-                <button class="quit">Quit Quiz</button>
-            </div>
-        </div>
-    
-        <!-- Inside this JavaScript file I've inserted Questions and Options only -->
-        <script src="js/carga_teoria_musical.js"></script> 
-        <!-- Inside this JavaScript file I've coded all Quiz Codes -->
-         <script src="js/script_math.js"></script> 
-    
+        
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://DebPx.com">DebPx!</a>
+      </div>
+    </div>
+  </footer>
+
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
