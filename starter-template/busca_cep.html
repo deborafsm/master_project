@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
@@ -13,7 +15,7 @@
   <link href="css/styleCep.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
+  <nav class="black lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="index.html"  class="material-icons">favorite</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#"></a></li>
@@ -35,17 +37,14 @@
 
     <section>
         <div id="dados">
-            <input type="text" id="numeroCep"  size="10" placeholder="CEP"> 
+            <input  type="text" id="numeroCep"  size="10" placeholder="CEP"> 
             <button type="button" id="buttoncpf" onclick="consultaCep()">consultar</button>
            
     
            
         </div>
         
-        <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-          </div>
-        <div class="table">
+        <div id="resposta">
             <h3 id="cep">CEP</h3>
             <table id="table">
                 <tbody>
@@ -77,7 +76,7 @@
     <br><br>
   </div>
 
-  <footer class="page-footer orange">
+  <footer class="page-footer black">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">

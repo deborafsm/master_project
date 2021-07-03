@@ -5,6 +5,16 @@
  *
  * Made By MaterializeCSS.com
  */
+ :root {
+  --clr-neon: hsl(0 100% 100%);
+  --clr-bg: hsl(323 21% 16%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
  .icon-block {
     padding: 0 15px;
@@ -13,17 +23,60 @@
       font-size: inherit;
   }
 
+body {
+  min-height: 100vh;
+  place-items: center;
+  background: var(--clr-bg);
+  font-family:  'Roboto Mono', monospace;
+  color: var(--clr-neon);
+}
+
+footer input {
+  /*text-align:center; - centralizar o texto
+  color - cor da fonte*/
+  color: white;
+  text-align: center;
+  font-style: italic;
+  position:absolute;
+  bottom:0;
+  width:100%;
+
+}
   
-  footer {
-    /*text-align:center; - centralizar o texto
-    color - cor da fonte*/
-    color: white;
-    text-align: center;
-    font-style: italic;
-    position:absolute;
-    bottom:0;
-    width:100%;
+#buttoncpf
+{
+    background: transparent;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    margin: 20px 0 0;
+    padding: 0px;
+    padding-left:5px ;
+    padding-right:5px ;
+    text-decoration: none;
+    display: inline;
+    color:white;
+/*Deixa gradiente*/
+    transition: 0.5s;
+    transform: translateY(-20px);
+    opacity: 1;
+    border-image: -webkit-linear-gradient(right,#ca38a6, #42a5c4);
+    border-image-slice: 1;
+}
+
+
+.section{
+  margin: 0 auto;
+  width: 500px;
+  border: white; 
+  margin: 0px;
   
-  }
+}
+
+#numeroCep{
+  transition: none;
   
-  
+}
+tr td{
+  color: #000;  
+}
